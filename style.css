@@ -191,31 +191,32 @@ margin: 0 auto;
 }
 /* Second Section */
 
+.schedule{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 1.5rem;
+  padding: 1rem 0px 2rem 0px;
+  width: 100%
+}
+
+.schedule-sidebar{
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.schedule-sidebar img {
+  width: 100%
+}
+
 @media only screen and (max-width: 800px){
   .second .flex-container {
     display: none;
   }
 
-  .schedule{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-left: 1.5rem;
-    padding: 1rem 0px 2rem 0px;
-    width: 100%
-  }
-
-  .schedule-sidebar{
-    flex-direction: column;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .schedule-sidebar img {
-    width: 100%
-  }
 
 .information{
   display: none;
@@ -339,6 +340,40 @@ font-size: 0.8rem;
 }
 
 .information a{
+  text-decoration: none;
+  color: blue;
+  font-size: 0.8rem;
+}
+
+.schedule-text {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: left;
+  justify-content: center;
+  width: 60%;
+  line-height: 1.5;
+}
+
+.schedule h5 {
+padding: 0.5rem 0 0.5rem 0.5rem;
+font-size: 0.8rem;
+}
+
+.schedule h4{
+    font-size: 1.1rem;
+    line-height: 1.3;
+    font-weight: 600;
+    color: #4f4e4e;
+    padding-left: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.schedule h6{
+  padding-left: 0.5rem;
+}
+
+.schedule a{
   text-decoration: none;
   color: blue;
   font-size: 0.8rem;
