@@ -80,6 +80,21 @@ header .flex{
   justify-content: flex-end;
 }
 
+@media only screen and (max-width: 800px){
+  nav ul, .brand {
+    display: none;
+  }
+  .mobile-menu{
+  display: block;
+  text-align: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.menu{
+  width: 100%
+}
+}
+
 /* First Section */
 .containment{
 background-color:  #dbd6d6;
@@ -100,6 +115,7 @@ margin: 0 auto;
 .main .flex-container{
   padding: 2rem 1rem 2rem 1.5rem;
   width: 60%;
+  display: flex;
 }
 
 .main img {
@@ -129,12 +145,6 @@ margin: 0 auto;
   margin-right: 4rem;
 }
 
-.flex-container {
-  display: flex;
-  width: 60%;
-  padding-right: 0.8rem;
-}
-
 .main h1{
   font-size: 2.15rem;
   line-height: 1.3;
@@ -153,14 +163,62 @@ margin: 0 auto;
   padding-left: 1.5rem;
 }
 
+@media only screen and (max-width: 800px){
+.main  {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    max-height: 50rem;
+}
+.main .flex-container {
+  width: 100%;
+  padding: 0 0 2rem 0;;
+  height: auto;
+}
+
+.content h1{
+  padding-bottom: 2rem;
+}
+
+.content h4{
+  padding-bottom: 1.5rem;
+}
+
+.button{
+  margin-bottom: 2rem;
+}
+}
 /* Second Section */
+
+@media only screen and (max-width: 800px){
+  .second .flex-container {
+    display: none;
+  }
+
+  .information{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 1.5rem;
+    max-width: 27.5rem;
+    padding: 1rem 0px 2rem 0px;
+    width: 27.7rem;
+  }
+
+  .information-sidebar{
+    flex-direction: column;
+  }
+
+}
 
 .containment-2{
   background-color: #f9f7f7;
   margin: 0 auto;
 }
 
-.second {
+
+  .second {
   display: flex;
   width: 100%;
   max-width: 65.625rem;
@@ -184,11 +242,13 @@ margin: 0 auto;
   padding-left: 1.5rem;
 }
 
-.second .flex-container{
+@media only screen and (min-width: 800px){
+  .second .flex-container{
   flex-direction: column;
   display: flex;
   width: 60%;
   padding-right: 0.8rem;
+}
 }
 
 .second p{
@@ -206,7 +266,8 @@ margin: 0 auto;
   width: 27.7rem;
 }
 
-.information {
+@media only screen and (min-width: 800px){
+  .information {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -216,7 +277,7 @@ margin: 0 auto;
   padding: 1rem 0px 2rem 0px;
   width: 27.7rem;
 }
-
+}
 .information-sidebar img {
   max-height: 11.25rem;
   padding: 1rem;
@@ -228,6 +289,12 @@ margin: 0 auto;
   width: 100%;
   justify-content: space-between;
   align-items: center;
+}
+
+@media only screen and (min-width: 800px){
+  .information-sidebar:first-child{
+  border-bottom: 4px solid #dbd6d6;
+}
 }
 
 .information-text {
