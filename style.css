@@ -196,20 +196,30 @@ margin: 0 auto;
     display: none;
   }
 
-  .information{
+  .schedule{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     margin-left: 1.5rem;
-    max-width: 27.5rem;
     padding: 1rem 0px 2rem 0px;
-    width: 27.7rem;
+    width: 100%
   }
 
-  .information-sidebar{
+  .schedule-sidebar{
     flex-direction: column;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
   }
 
+  .schedule-sidebar img {
+    width: 100%
+  }
+
+.information{
+  display: none;
+}
 }
 
 .containment-2{
@@ -277,6 +287,9 @@ margin: 0 auto;
   padding: 1rem 0px 2rem 0px;
   width: 27.7rem;
 }
+
+.schedule{
+  display: none;
 }
 .information-sidebar img {
   max-height: 11.25rem;
@@ -290,7 +303,7 @@ margin: 0 auto;
   justify-content: space-between;
   align-items: center;
 }
-
+}
 @media only screen and (min-width: 800px){
   .information-sidebar:first-child{
   border-bottom: 4px solid #dbd6d6;
